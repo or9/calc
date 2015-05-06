@@ -1,0 +1,6 @@
+[06-May-2015 19:26:06 America/Detroit] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20100525/php_gettext.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20100525/php_gettext.so, 9): image not found in Unknown on line 0
+[06-May-2015 19:26:06 America/Detroit] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20100525/pdo_mysql.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20100525/pdo_mysql.so, 9): image not found in Unknown on line 0
+[06-May-2015 19:26:06 America/Detroit] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/opt/php56-pthreads/pthreads.so' - dlopen(/usr/local/opt/php56-pthreads/pthreads.so, 9): Symbol not found: _basic_globals_id
+  Referenced from: /usr/local/opt/php56-pthreads/pthreads.so
+  Expected in: flat namespace
+ in /usr/local/opt/php56-pthreads/pthreads.so in Unknown on line 0
