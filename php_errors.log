@@ -1,0 +1,12 @@
+[07-May-2015 22:11:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20100525/php_gettext.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20100525/php_gettext.so, 9): image not found in Unknown on line 0
+[07-May-2015 22:11:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20100525/pdo_mysql.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20100525/pdo_mysql.so, 9): image not found in Unknown on line 0
+[07-May-2015 22:11:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/opt/php56-igbinary/igbinary.so' - dlopen(/usr/local/opt/php56-igbinary/igbinary.so, 9): Symbol not found: _basic_globals
+  Referenced from: /usr/local/opt/php56-igbinary/igbinary.so
+  Expected in: flat namespace
+ in /usr/local/opt/php56-igbinary/igbinary.so in Unknown on line 0
+[08-May-2015 01:25:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20100525/php_gettext.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20100525/php_gettext.so, 9): image not found in Unknown on line 0
+[08-May-2015 01:25:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/extensions/no-debug-non-zts-20100525/pdo_mysql.so' - dlopen(/usr/lib/php/extensions/no-debug-non-zts-20100525/pdo_mysql.so, 9): image not found in Unknown on line 0
+[08-May-2015 01:25:51 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/local/opt/php56-igbinary/igbinary.so' - dlopen(/usr/local/opt/php56-igbinary/igbinary.so, 9): Symbol not found: _basic_globals
+  Referenced from: /usr/local/opt/php56-igbinary/igbinary.so
+  Expected in: flat namespace
+ in /usr/local/opt/php56-igbinary/igbinary.so in Unknown on line 0
