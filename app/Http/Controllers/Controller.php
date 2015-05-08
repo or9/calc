@@ -1,8 +1,8 @@
 <?php namespace App\Http\Controllers;
 
-use Laravel\Lumen\Routing\Controller as BaseController;
+use Laravel\Lumen\Routing\Controller;
 
-class Controller extends BaseController
+class SimpleCalculator extends Controller 
 {
     //
 }
