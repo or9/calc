@@ -4,3 +4,5 @@ bower_components
 *.env
 *.swp
 *.swo
+php_errors.log
+node_modules

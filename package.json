@@ -1,0 +1,38 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "calculator test app",
+  "main": "public/index.php",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-exec": "^2.1.1",
+    "gulp-util": "^3.0.4"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/or9/calc.git"
+  },
+  "keywords": [
+    "calculator",
+    "laravel",
+    "5",
+    "php",
+    "phpunit",
+    "polymer"
+  ],
+  "author": "AbdurRahman <abdur.rahman@lochbridge.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/or9/calc/issues"
+  },
+  "homepage": "https://github.com/or9/calc"
+}
