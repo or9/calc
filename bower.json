@@ -1,0 +1,23 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "homepage": "https://github.com/or9/calc",
+  "authors": [
+    "abdurrahman <abdur.rahman@lochbridge.com>"
+  ],
+  "description": "calculator app",
+  "main": "public/index.php",
+  "keywords": [
+    "calculator",
+    "laravel",
+    "polymer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
