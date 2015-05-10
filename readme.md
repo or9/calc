@@ -2,6 +2,7 @@
 ##Running The App  
 ```
 composer install  
+npm install
 ```
 
 ##Development  

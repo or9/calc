@@ -26,7 +26,10 @@ function watch () {
 	gulp.watch([
 		"app/**/*.php",
 		"tests/**/*.php",
-		"resources/views/**/*",
-		"public/**/*"
+		"resources/**/*.php",
+		"bootstrap/**/*.php",
+		"public/**/*",
+		"gulpfile.js"
+
 	], ["phpunit", "karmaunit"]);
 }

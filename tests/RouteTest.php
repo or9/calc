@@ -21,5 +21,28 @@ class RouteTest extends TestCase {
 
     }
 
+    public function testAddRoute ()
+    {
+	$response = $this->call("POST", "/api/add");
+	$this->assertResponseOk();
+    }
+
+    public function testSubtractRoute ()
+    {
+	$response = $this->call("POST", "/api/subtract");
+	$this->assertResponseOk();
+    }
+
+    public function testMultiplyRoute ()
+    {
+	$response = $this->call("POST", "/api/multiply");
+	$this->assertResponseOk();
+    }
+
+    public function testDivideRoute ()
+    {
+	$response = $this->call("POST", "/api/divide");
+	$this->assertResponseOk();
+    }
 }
 
