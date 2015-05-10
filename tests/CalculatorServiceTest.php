@@ -59,6 +59,13 @@ class CalculatorServiceTest extends \TestCase {
 		$this->assertEquals(792.008, $calc->multiply(99.001));
 	}
 
+	public function testZeroMultiply ()
+	{
+		$calc = new CalculatorService;
+		$calc->add(8);
+		$this->assertEquals(0, $calc->multiply(0));
+	}
+
 	public function testDivide ()
 	{
 		$calc = new CalculatorService;

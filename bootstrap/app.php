@@ -2,7 +2,7 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-// Dotenv::load(__DIR__.'/../');
+Dotenv::load(__DIR__.'/../');
 
 /*
 |--------------------------------------------------------------------------
@@ -44,10 +44,6 @@ $app->singleton(
     'App\Console\Kernel'
 );
 
-$app->singleton(
-	"App\Services\CalculatorService"
-);
-
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
@@ -60,8 +56,8 @@ $app->singleton(
 */
 
 $app->middleware([
-//	'Illuminate\Session\Middleware\StartSession',
-//	'Laravel\Lumen\Http\Middleware\VerifyCsrfToken'
+	'Illuminate\Session\Middleware\StartSession',
+	//'Laravel\Lumen\Http\Middleware\VerifyCsrfToken'
 ]);
 
 // $app->routeMiddleware([
@@ -79,7 +75,7 @@ $app->middleware([
 |
 */
 
-//$app->register('App\Providers\AppServiceProvider');
+$app->register('App\Providers\AppServiceProvider');
 
 /*
 |--------------------------------------------------------------------------
