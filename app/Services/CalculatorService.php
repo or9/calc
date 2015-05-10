@@ -4,6 +4,11 @@ final class CalculatorService {
 
 	protected $calculation = "0";
 
+	public function __construct ()
+	{
+		// do things
+	}
+
 	/**
 	 * @return integer|float
 	 */
@@ -33,6 +38,7 @@ final class CalculatorService {
 	 */
 	public function divide ($number)
 	{
+
 		if ((string) $number === "0") {
 			return NAN;
 		}

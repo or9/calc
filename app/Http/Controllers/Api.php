@@ -1,47 +1,58 @@
 <?php namespace App\Http\Controllers;
 
-use Illuminate\Http\Response;
+use Illuminate\Http\Request;
+use App\Services\CalculatorService;
 
 final class Api extends Controller
 {
+
+	protected $calc;
+
+	public function __construct (CalculatorService $calculatorService)
+	{
+		$this->calc = $calculatorService;
+	}
 
 	/**
 	 * add
 	 * @returns integer|float
 	 */
-	public function add ()
+	public function add (Request $req)
 	{
-		//return new Response("", 200);
-		return response("asdf!", 200);
+		return $this->calcResponse($req, "add");
 	}
 
 	/**
 	 * subtract
 	 * @returns integer|float
 	 */
-	public function subtract ()
+	public function subtract (Request $req)
 	{
-		//return new Response("", 200);
-		return response("asdf!", 200);
+		return $this->calcResponse($req, "subtract");
 	}
 
 	/**
 	 * multiply
 	 * @returns integer|float
 	 */
-	public function multiply ()
+	public function multiply (Request $req)
 	{
-		//return new Response("", 200);
-		return response("asdf!", 200);
+		return $this->calcResponse($req, "multiply");
 	}
 
 	/**
 	 * divide
 	 * @returns integer|float
 	 */
-	public function divide ()
+	public function divide (Request $req)
 	{
-		//return new Response("", 200);
-		return response("asdf!", 200);
+		return $this->calcResponse($req, "divide");
+	}
+
+	private function calcResponse ($req, $method)
+	{
+		$value = $req->input("value");
+		$value = $this->calc->$method($value);
+		return response()->json(["value" => $value]);
 	}
 }

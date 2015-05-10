@@ -44,6 +44,10 @@ $app->singleton(
     'App\Console\Kernel'
 );
 
+$app->singleton(
+	"App\Services\CalculatorService"
+);
+
 /*
 |--------------------------------------------------------------------------
 | Register Middleware

@@ -82,4 +82,11 @@ class CalculatorServiceTest extends \TestCase {
 		$this->assertEquals(4860, $calc->divide(0.1));
 		$this->assertEquals(0.49999485602, $calc->divide(9720.1));
 	}
+
+	public function testHalfDivide ()
+	{
+		$calc = new CalculatorService;
+		$calc->add(1);
+		$this->assertEquals(0.5, $calc->divide(2));
+	}
 }
