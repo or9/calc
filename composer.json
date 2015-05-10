@@ -26,5 +26,18 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "scripts": {
+		"post-install-cmd": [
+			"bower install"
+		],
+		"post-update-cmd": [
+			"bower update",
+			"bower install"
+		],
+		"post-create-project-cmd": [
+			"php -r \"copy('.env.example', '.env');\"",
+			"php artisan key:generate"
+		]
+	}
 }

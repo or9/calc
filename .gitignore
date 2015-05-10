@@ -1,6 +1,7 @@
 /lumen.log
 /vendor
 bower_components
+public/components
 *.env
 *.swp
 *.swo
