@@ -2,14 +2,14 @@
 
 final class CalculatorService {
 
-	protected $calculation = 0;
+	protected $calculation = "0";
 
 	/**
 	 * @return integer|float
 	 */
 	public function add ($number)
 	{
-		return $this->calculation += $number;
+		return $this->calculate($number, "bcadd");
 	}
 
 	/*
@@ -17,7 +17,7 @@ final class CalculatorService {
 	 */
 	public function subtract ($number)
 	{
-		return $this->calculation -= $number;
+		return $this->calculate($number, "bcsub");
 	}
 
 	/*
@@ -25,7 +25,7 @@ final class CalculatorService {
 	 */
 	public function multiply ($number)
 	{
-		return $this->calculation *= $number;
+		return $this->calculate($number, "bcmul");
 	}
 
 	/**
@@ -33,10 +33,31 @@ final class CalculatorService {
 	 */
 	public function divide ($number)
 	{
-		if ($number === 0) {
+		if ((string) $number === "0") {
 			return NAN;
 		}
 
-		return $this->calculation /= $number;
+		return $this->calculate($number, "bcdiv");
+
 	}
+
+	private function calculate ($number, $calcFn)
+	{
+		$number = (string) $number;
+		$this->calculation = (string) $this->calculation;
+
+		$this->calculation = $calcFn($this->calculation, $number, 32);
+		$this->calculation = $this->rmTrailingZeroes($this->calculation);
+
+		return $this->calculation;
+
+	}
+
+	private function rmTrailingZeroes ($number)
+	{
+		$rex = ['/[\.][0]+$/','/([\.][0-9]*[1-9])([0]*)$/'];
+		$replacement = ['', '$1'];
+		return preg_replace($rex, $replacement, $number);
+	}
+
 }

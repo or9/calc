@@ -33,7 +33,7 @@ class CalculatorServiceTest extends \TestCase {
 	public function testFloatSubtract ()
 	{
 		$calc = new CalculatorService;
-		$this->assertEquals(-1234567890.1234567890, $calc->subtract(1234567890.1234567890));
+		$this->assertEquals("-1234567890.1234567890", $calc->subtract("1234567890.1234567890"));
 	}
 
 	public function testMultiply ()
