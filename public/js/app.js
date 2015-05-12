@@ -102,6 +102,7 @@ var heroLaraCalculator = (function (doc, undefined) {
 				calculated = false;
 				operated = false;
 				operator = null;
+				return field.value = "";
 
 			} else {
 

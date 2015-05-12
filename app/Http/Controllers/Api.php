@@ -1,21 +1,13 @@
 <?php namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\CalculatorService;
 
 final class Api extends Controller
 {
 
-	protected $calc;
-
-	public function __construct (CalculatorService $calculatorService)
-	{
-		$this->calc = $calculatorService;
-	}
-
 	public function clear (Request $req)
 	{
-		$this->calc->clear();
+		$this::$calcService->clear();
 
 		return response()->json(["value" => "0"]);
 	}
@@ -59,7 +51,7 @@ final class Api extends Controller
 	private function calcResponse ($req, $method)
 	{
 		$value = $req->input("value");
-		$value = $this->calc->$method($value);
+		$value = $this::$calcService->$method($value);
 		return response()->json(["value" => $value]);
 	}
 }

@@ -19,7 +19,7 @@ $app = new Laravel\Lumen\Application(
 	realpath(__DIR__.'/../')
 );
 
-// $app->withFacades();
+$app->withFacades();
 
 // $app->withEloquent();
 
@@ -57,6 +57,7 @@ $app->singleton(
 
 $app->middleware([
 	'Illuminate\Session\Middleware\StartSession',
+	'App\Http\Middleware\SessionMiddleware'
 	//'Laravel\Lumen\Http\Middleware\VerifyCsrfToken'
 ]);
 

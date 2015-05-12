@@ -1,6 +1,7 @@
 <?php namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Services\CalculatorService;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,6 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-	    $this->app->singleton("App\Services\CalculatorService");
+	    $this->app->singleton("CalculatorService", function ($app) {
+		    return new CalculatorService;
+	    });
+
     }
 }

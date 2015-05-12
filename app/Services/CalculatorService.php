@@ -1,8 +1,8 @@
 <?php namespace App\Services;
 
-final class CalculatorService {
+use Session;
 
-	protected $calculation = "0";
+class CalculatorService {
 
 	public function __construct ()
 	{
@@ -11,7 +11,9 @@ final class CalculatorService {
 
 	public function clear ()
 	{
-		return $this->calculation = 0;
+		//return $this->calculation = "0";
+		Session::flush();
+		return "0";
 	}
 
 	/**
@@ -43,7 +45,6 @@ final class CalculatorService {
 	 */
 	public function divide ($number)
 	{
-
 		if ((string) $number === "0") {
 			return NAN;
 		}
@@ -55,12 +56,20 @@ final class CalculatorService {
 	private function calculate ($number, $calcFn)
 	{
 		$number = (string) $number;
-		$this->calculation = (string) $this->calculation;
+		$total;
 
-		$this->calculation = $calcFn($this->calculation, $number, 32);
-		$this->calculation = $this->rmTrailingZeroes($this->calculation);
+		if (Session::has("total")) {
+			$total = Session::get("total");
+		} else {
+			$total = "0";
+		}
 
-		return $this->calculation;
+		$total = $calcFn($total, $number, 32);
+		$total = $this->rmTrailingZeroes($total);
+
+		Session::flash("total", $total);
+
+		return $total;
 
 	}
 
