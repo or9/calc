@@ -14,7 +14,7 @@ class SessionMiddleware {
      */
     public function handle($request, Closure $next)
     {
-	    Session::flash("value", $request->input("value"));
+	    // before…
 
 	    $response = $next($request);
 
