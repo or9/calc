@@ -29,11 +29,13 @@
     },
     "scripts": {
 		"post-install-cmd": [
-			"bower install"
+		  "npm install",
+			"node_modules/.bin/bower install"
 		],
 		"post-update-cmd": [
-			"bower update",
-			"bower install"
+		  "npm update",
+			"node_modules/.bin/bower update",
+			"node_modules/.bin/bower install"
 		],
 		"post-create-project-cmd": [
 			"php -r \"copy('.env.example', '.env');\"",
