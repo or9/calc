@@ -37,6 +37,7 @@ header p {
   width: auto;
   margin: 15px 25px;
   flex: 1 1 auto;
+  text-align: center;
 }
 
 footer {
