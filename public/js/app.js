@@ -95,8 +95,12 @@ var heroLaraCalculator = (function (doc, undefined) {
 		xhr.send(data);
 
 		function onload () {
-			console.log("response? ", this);
-			data = JSON.parse(this.responseText);
+			try {
+				data = JSON.parse(this.responseText);
+			} catch (err) {
+				onerror(err);
+			}
+
 
 			if (method === "clear") {
 
@@ -115,8 +119,8 @@ var heroLaraCalculator = (function (doc, undefined) {
 
 		}
 
-		function onerror () {
-			console.log("this is so messed up ", this);
+		function onerror (err) {
+			console.log("this is so messed up ", this, err);
 		}
 
 	}
