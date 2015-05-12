@@ -1,6 +1,8 @@
 /* utf-8 */
 
 ::shadow button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   height: 75px;
   font-size: 18px;
   width: auto;

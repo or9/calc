@@ -8,9 +8,10 @@
 
 		<title>Calculator</title>
 
-		<link href="css/app.css" rel="stylesheet" type="text/css" />
-		<link href='//fonts.googleapis.com/css?family=Roboto:400,300'
+		<link
+href='http://fonts.googleapis.com/css?family=Inconsolata:400|Roboto:300,400'
 rel='stylesheet' type='text/css' />
+		<link href="css/app.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		@include("header")

@@ -1,10 +1,17 @@
 /* utf-8 */
 body {
-  font: 100%/100% normal normal helvetica, verdana, arial, helvetica, sans-serif;
+  font: 100%/100% "Roboto", helvetica, verdana, arial, helvetica, sans-serif;
+  font-weight: 300;
   position: relative;
   text-align: left;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+p {
+  font-weight: 300;
 }
 
 section, div, h1, p, header, footer {

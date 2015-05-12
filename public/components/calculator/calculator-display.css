@@ -1,6 +1,8 @@
 /* utf-8 */
 
 ::shadow input {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
   box-sizing: border-box;
   width: 640px;
   padding: 20px 5px;
