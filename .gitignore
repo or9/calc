@@ -2,7 +2,6 @@
 /vendor
 bower_components
 public/components
-*.env
 *.swp
 *.swo
 php_errors.log
