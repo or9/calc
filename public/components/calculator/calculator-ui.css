@@ -1,0 +1,18 @@
+/* utf-8 */
+
+calculator-ui {
+  max-width: 640px;
+  height: auto;
+  margin: 15px auto;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-content: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 640px) {
+
+}

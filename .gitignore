@@ -1,7 +1,6 @@
 /lumen.log
 /vendor
 bower_components
-public/components
 *.swp
 *.swo
 php_errors.log

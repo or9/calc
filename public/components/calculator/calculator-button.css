@@ -1,0 +1,34 @@
+/* utf-8 */
+
+::shadow button {
+  height: 75px;
+  font-size: 18px;
+  width: auto;
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  flex: 1 1 33%;
+  align-self: stretch;
+}
+
+::shadow .wide {
+  flex: 2 1 66%;
+}
+
+::shadow aside {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 1 25%;
+  order: 2;
+}
+
+::shadow section {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 75%;
+  order: 1;
+}
+
+::shadow aside button {
+  flex: 0 0 100%;
+}

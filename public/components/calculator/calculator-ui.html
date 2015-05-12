@@ -1,0 +1,36 @@
+<link rel="import" href="calculator-display.html">
+<link rel="import" href="calculator-button.html">
+<link rel="stylesheet" type="text/css" href="calculator-ui.css" />
+
+<template>
+    <input is="calculator-display" type="number" value="" id="output"
+      placeholder="0" data-value="0" />
+
+    <aside>
+      <button is="calculator-button" data-operator="add">+</button>
+      <button is="calculator-button" data-operator="subtract">-</button>
+      <button is="calculator-button" data-operator="multiply">x</button>
+      <button is="calculator-button" data-operator="divide">/</button>
+      <button is="calculator-button" data-operator="calculate">=</button>
+    </aside>
+
+    <section>
+      <button is="calculator-button" data-operator="clear">c</button>
+
+      <button is="calculator-button">1</button>
+      <button is="calculator-button">2</button>
+      <button is="calculator-button">3</button>
+      <button is="calculator-button">4</button>
+      <button is="calculator-button">5</button>
+      <button is="calculator-button">6</button>
+      <button is="calculator-button">7</button>
+      <button is="calculator-button">8</button>
+      <button is="calculator-button">9</button>
+      <button is="calculator-button">.</button>
+      <button is="calculator-button" class="wide">0</button>
+    </section>
+
+</template>
+
+
+<script src="calculator-ui.js"></script>
