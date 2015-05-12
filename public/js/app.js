@@ -88,13 +88,14 @@ var heroLaraCalculator = (function (doc, undefined) {
 		data.append("value", field.value);
 
 		xhr.open("POST", "/api/" + endpoint, true);
-		xhr.timeout = 1000;
+		xhr.timeout = 3000;
 		xhr.onload = onload;
 		xhr.onerror = xhr.ontimeout = onerror;
 
 		xhr.send(data);
 
 		function onload () {
+			console.log("response? ", this);
 			data = JSON.parse(this.responseText);
 
 			if (method === "clear") {
