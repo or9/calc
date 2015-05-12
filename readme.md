@@ -16,3 +16,11 @@ npm install
 * `*Test.php` should contain public methods named `test*` 
 * Run via `phpunit` or `gulp`  
 
+##Issues
+Apparently not every environment has `bcmath` by default. This will cause invalid responses (`500`), resulting in empty `JSON.parse` throwing up.  
+Fix: Add it to `composer.json`.
+
+Laravel routes were not treating singleton as expected. Switched to using `Session` (and `Facades`) to circumvent.
+
+Shadow DOM styling is weird.
+
