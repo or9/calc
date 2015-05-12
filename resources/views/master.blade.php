@@ -9,7 +9,7 @@
 		<title>Calculator</title>
 
 		<link
-href='http://fonts.googleapis.com/css?family=Inconsolata:400|Roboto:300,400'
+href='//fonts.googleapis.com/css?family=Inconsolata:400|Roboto:300,400'
 rel='stylesheet' type='text/css' />
 		<link href="css/app.css" rel="stylesheet" type="text/css" />
 	</head>
