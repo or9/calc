@@ -1,4 +1,8 @@
 #Calc  
+
+##Usage
+Front-end uses WebcomponentsJS so will only work with Chrome by default, and Safari with a polyfill. To enable in Firefox, navigate to `about:config`, search for `webcomponents` and change to `true`. 
+
 ##Running The App  
 ```
 composer install  

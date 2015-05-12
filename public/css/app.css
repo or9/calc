@@ -1,0 +1,43 @@
+/* utf-8 */
+body {
+  font: 100%/100% normal normal helvetica, verdana, arial, helvetica, sans-serif;
+  position: relative;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+section, div, h1, p, header, footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 0 auto;
+  background: #fefeff;
+  color: #999;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header h1, 
+header h2,
+header p {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 15px 25px;
+  flex: 1 1 auto;
+}
+
+footer {
+  margin: 0 auto;
+  background: #fefeff;
+  color: #999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e7e7e7;
+}

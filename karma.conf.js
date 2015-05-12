@@ -15,7 +15,8 @@ module.exports = function(config) {
 	'public/components/webcomponents/webcomponents.js',
 	'public/components/angular-route/angular-route.js',
 	'public/js/**/*.js',
-	'public/js/**/spec.*.js'
+	'public/components/calculator/**/*.js',
+	'tests/js/**/*.js',
     ],
 
 

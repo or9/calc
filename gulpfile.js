@@ -25,7 +25,7 @@ function karmaunit (done) {
 function watch () {
 	gulp.watch([
 		"app/**/*.php",
-		"tests/**/*.php",
+		"tests/**/*",
 		"resources/**/*.php",
 		"bootstrap/**/*.php",
 		"public/**/*",

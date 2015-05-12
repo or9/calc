@@ -9,6 +9,11 @@ final class CalculatorService {
 		// do things
 	}
 
+	public function clear ()
+	{
+		return $this->calculation = 0;
+	}
+
 	/**
 	 * @return integer|float
 	 */

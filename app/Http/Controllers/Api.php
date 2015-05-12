@@ -13,6 +13,13 @@ final class Api extends Controller
 		$this->calc = $calculatorService;
 	}
 
+	public function clear (Request $req)
+	{
+		$this->calc->clear();
+
+		return response()->json(["value" => "0"]);
+	}
+
 	/**
 	 * add
 	 * @returns integer|float
