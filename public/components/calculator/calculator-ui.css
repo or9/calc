@@ -39,7 +39,7 @@ calculator-ui {
 			width: 100%;
 			max-width: 100%;
 			margin: 0 auto;
-			-webkit-flex-direction: column;
+			-webkit-flex-flow: column nowrap;
 			font-size: 200%;
 		}
 
