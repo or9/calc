@@ -33,4 +33,75 @@
 
 ::shadow aside button {
   flex: 0 0 100%;
+  color: #bbb;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+}
+
+::shadow .fade {
+	color: #bbb;
+	background: #fff;
+	border: 1px solid #d7d7d7;
+}
+
+/* non shadow dom browsers (everybody except chrome) */
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  height: 75px;
+  font-size: 18px;
+  width: auto;
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-block;
+  -moz-flex: 1 1 33%;
+  -webkit-flex: 1 1 33%;
+  -moz-align-self: stretch;
+  -webkit-align-self: stretch;
+}
+
+.wide {
+  flex: 2 1 66%;
+}
+
+aside {
+	display: -moz-flex;
+	display: -webkit-flex;
+  display: flex;
+  -moz-flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  -moz-flex: 1 1 25%;
+  -webkit-flex: 1 1 25%;
+  -moz-order: 2;
+  -webkit-order: 2;
+}
+
+section {
+	display: -moz-flex;
+	display: -webkit-flex;
+  display: flex;
+  -moz-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  -moz-flex: 1 1 75%;
+  -webkit-flex: 1 1 75%;
+  -moz-order: 1;
+  -webkit-order: 1;
+}
+
+.fade {
+	color: #bbb;
+	background: #fff;
+	border: 1px solid #d7d7d7;
+}
+
+aside button {
+  -moz-flex: 0 0 100%;
+  -webkit-flex: 0 0 100%;
+  -moz-align-self: stretch;
+  -webkit-align-self: stretch;
+  min-height: 60px;
+  color: #bbb;
+  background: #fff;
+  border: 1px solid #d7d7d7;
 }

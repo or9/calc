@@ -5,11 +5,23 @@ calculator-ui {
   height: auto;
   margin: 15px auto;
   border: none;
+  display: -moz-flex;
+  display: -webkit-flex;
   display: flex;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  -moz-flex-flow: row;
+  -webkit-flex-flow: row;
   flex-flow: row;
+  -webkit-align-content: stretch;
+  -webkit-align-content: stretch;
   align-content: stretch;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -moz-justify-content: space-between;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
