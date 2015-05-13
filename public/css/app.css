@@ -27,10 +27,8 @@ header {
   background: #fefeff;
   color: #999;
   border-bottom: 1px solid #e7e7e7;
-	display: -moz-flex;
 	display: -webkit-flex;
   display: flex;
-  -moz-flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 }
@@ -43,7 +41,6 @@ header p {
   width: auto;
   margin: 15px 25px;
   text-align: center;
-  -moz-flex: 1 1 auto;
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
 }
@@ -62,12 +59,13 @@ footer {
 @media only screen 
 	and (-webkit-min-device-pixel-ratio: 2) {
 
-		h1, h2, h3, h4, h5 {
+		header h1, header h2 { 
 			font-size: 50%;
+			display: none;
 		}
 
-		h1 {
-			display: none;
+		p {
+			font-size: 50%;
 		}
 
 }

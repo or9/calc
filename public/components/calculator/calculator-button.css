@@ -55,10 +55,7 @@ button {
   margin: 0;
   box-sizing: border-box;
   display: inline-block;
-  -moz-flex: 1 1 33%;
   -webkit-flex: 1 1 33%;
-  -moz-align-self: stretch;
-  -webkit-align-self: stretch;
 }
 
 .wide {
@@ -66,26 +63,20 @@ button {
 }
 
 aside {
-	display: -moz-flex;
 	display: -webkit-flex;
   display: flex;
-  -moz-flex-flow: column wrap;
+  -webkit-flex-wrap: wrap;
   -webkit-flex-flow: column wrap;
-  -moz-flex: 1 1 25%;
   -webkit-flex: 1 1 25%;
-  -moz-order: 2;
   -webkit-order: 2;
 }
 
 section {
-	display: -moz-flex;
 	display: -webkit-flex;
   display: flex;
-  -moz-flex-flow: row wrap;
+  -webkit-flex-wrap: wrap;
   -webkit-flex-flow: row wrap;
-  -moz-flex: 1 1 75%;
   -webkit-flex: 1 1 75%;
-  -moz-order: 1;
   -webkit-order: 1;
 }
 
@@ -94,7 +85,7 @@ section button {
 }
 
 .fade {
-	color: #bbb;
+	color: #36b;
 	background: #fff;
 	border: 1px solid #d7d7d7;
 }
@@ -105,12 +96,10 @@ section button {
 }
 
 aside button {
-  -moz-flex: 0 0 100%;
   -webkit-flex: 0 0 100%;
-  -moz-align-self: stretch;
   -webkit-align-self: stretch;
   min-height: 60px;
-  color: #bbb;
+  color: #36b;
   background: #fff;
   border: 1px solid #d7d7d7;
 }
@@ -132,16 +121,23 @@ aside button:active {
 		section {
 			-webkit-flex: 0 1 100%;
 			-webkit-order: 2;
+			-webkit-flex-direction: vertical;
+			-webkit-align-items: stretch;
 		}
 
 		aside {
 			-webkit-flex-flow: row wrap;
-			-webkit-flex: 0 1 100%;
+			-webkit-flex: 0 5 100%;
 			-webkit-order: 1;
+			-webkit-align-items: stretch;
+		}
+
+		section button {
+			-webkit-flex: 1 5 20%;
 		}
 
 		aside button {
-			-webkit-flex: 0 2 20%;
+			-webkit-flex: 1 5 20%;
 
 		}
 
