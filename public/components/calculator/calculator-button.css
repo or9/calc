@@ -140,6 +140,7 @@ aside button:active {
 			-webkit-order: 1;
 		}
 
+		/*
 		section button {
 			height: 100px;
 			min-height: 100px;
@@ -149,4 +150,5 @@ aside button:active {
 			height: 85px;
 			min-height: 85px;
 		}
+		*/
 }

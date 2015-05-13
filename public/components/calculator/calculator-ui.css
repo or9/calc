@@ -40,7 +40,9 @@ calculator-ui {
 	and (orientation: portrait) {
 
 		calculator-ui {
-			max-width: none;
+			width: 100%;
+			max-width: 100%;
+			margin: 0 auto;
 			-webkit-flex-direction: column;
 		}
 
