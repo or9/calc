@@ -1,6 +1,7 @@
 /* utf-8 */
 
 calculator-ui {
+	position: relative;
   max-width: 640px;
   height: auto;
   margin: 15px auto;
@@ -44,6 +45,7 @@ calculator-ui {
 			max-width: 100%;
 			margin: 0 auto;
 			-webkit-flex-direction: column;
+			font-size: 200%;
 		}
 
 }

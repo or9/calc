@@ -31,10 +31,17 @@ input {
 @media only screen 
 	and (-webkit-min-device-pixel-ratio: 2) {
 
+
+		input {
+			width: auto;
+			max-width: 100%;
+		}
+
 }
 
 @media only screen 
 	and (-webkit-min-device-pixel-ratio: 2)
 	and (orientation: portrait) {
+
 
 }
