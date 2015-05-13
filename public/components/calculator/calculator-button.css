@@ -143,7 +143,7 @@ aside button:active {
 
 		section button {
 			min-height: 30px;
-			-webkit-flex: 1 5 20%;
+			-webkit-flex: 0 1 33%;
 		}
 
 		aside button {
