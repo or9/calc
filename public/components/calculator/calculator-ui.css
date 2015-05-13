@@ -25,6 +25,23 @@ calculator-ui {
   justify-content: space-between;
 }
 
-@media all and (max-width: 640px) {
+@media only screen 
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+		calculator-ui {
+			max-width: none;
+			margin: 0 auto;
+		}
+
+}
+
+@media only screen 
+	and (-webkit-min-device-pixel-ratio: 2) 
+	and (orientation: portrait) {
+
+		calculator-ui {
+			max-width: none;
+			-webkit-flex-direction: column;
+		}
 
 }

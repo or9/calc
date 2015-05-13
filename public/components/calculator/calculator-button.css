@@ -89,10 +89,19 @@ section {
   -webkit-order: 1;
 }
 
+section button {
+	-webkit-align-self: stretch;
+}
+
 .fade {
 	color: #bbb;
 	background: #fff;
 	border: 1px solid #d7d7d7;
+}
+
+.fade:active {
+	outline: 3px solid #39f;
+	z-index: 9;
 }
 
 aside button {
@@ -104,4 +113,40 @@ aside button {
   color: #bbb;
   background: #fff;
   border: 1px solid #d7d7d7;
+}
+
+aside button:active {
+	outline: 3px solid #39f;
+	z-index: 9;
+}
+
+@media only screen 
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+@media only screen 
+	and (-webkit-min-device-pixel-ratio: 2) 
+	and (orientation: portrait) {
+
+		section {
+			-webkit-flex: 0 1 100%;
+			-webkit-order: 2;
+		}
+
+		aside {
+			-webkit-flex-flow: row wrap;
+			-webkit-flex: 0 1 100%;
+			-webkit-order: 1;
+		}
+
+		section button {
+			height: 100px;
+			min-height: 100px;
+		}
+
+		aside button {
+			height: 85px;
+			min-height: 85px;
+		}
 }
