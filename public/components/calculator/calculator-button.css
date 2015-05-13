@@ -119,24 +119,35 @@ aside button:active {
 	and (orientation: portrait) {
 
 		section {
-			-webkit-flex: 0 1 100%;
+			-webkit-flex: 0 5 100%;
 			-webkit-order: 2;
-			-webkit-flex-direction: vertical;
+			-webkit-flex-flow: row wrap;
 			-webkit-align-items: stretch;
+			flex: 0 5 100%;
+			order: 2;
+			flex-flow: row wrap;
+			flex-align-items: stretch;
 		}
 
 		aside {
-			-webkit-flex-flow: row wrap;
+			-webkit-flex-flow: row nowrap;
 			-webkit-flex: 0 5 100%;
 			-webkit-order: 1;
 			-webkit-align-items: stretch;
+			flex-flow: row nowrap;
+		}
+
+		button {
+			height: auto;
 		}
 
 		section button {
+			min-height: 30px;
 			-webkit-flex: 1 5 20%;
 		}
 
 		aside button {
+			min-height: 30px;
 			-webkit-flex: 1 5 20%;
 
 		}
